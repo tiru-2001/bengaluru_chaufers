@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        
+
+        .upi:hover{
+          cursor: pointer;
+        }
+    </style>
+</head>
+<body style="font-family: 'Work Sans', sans-serif;">
+    
+    <div>
+        <div style="display: flex ; flex-direction: column; justify-content: center ; align-items: center; margin-bottom: 20px; margin-top: 20px; align-items: center; flex-wrap: wrap; gap: 5px;"> <img  style="width: 25%; min-width: 200px; height: 20%;" src="./assets/img/WhatsApp Image 2023-12-19 at 3.26.05 PM.jpeg" alt=""> <div style="position: relative;"><div onclick="copy()" style="border-radius: 5px; background-color: aqua; text-align: center;" class="upi">COPY UPI ID</div><div style="color: rgb(31, 94, 148);" id="upi" >maheshbv.1947@okaxis</div> <div style="position: absolute; top: 0px; left: 30%;  background-color: dimgray; color: blanchedalmond; padding-left: 2px; padding-right: 2px; display: none;" id="copy">Upi Copied</div></div></div>
+    </div>
+    <div><div style="display: flex; justify-content: center;"><div style="background-color: aquamarine; padding: 6px; border-radius: 6px; background-color: rgb(112, 184, 233); color: aliceblue;" onclick="submit()">SUBMIT</div></div> </div>
+    <script>
+        function copy() {
+        var copy = document.getElementById("copy");
+        copy.style.display='block'
+        setTimeout(() => {
+            copy.style.display='none'
+        }, 300);
+
+    }
+    </script>
+</body>
+
+<script>
+    
+    const queryString = window.location.search;
+  
+    
+    const urlParams = new URLSearchParams(queryString);
+  
+   
+   
+    const name = urlParams.get('name');
+    var pickup = urlParams.get('pickup');
+    const drop = urlParams.get('drop');
+    const number = urlParams.get('phone');
+    const Pickupdate = urlParams.get('pickdate');
+    const Pickuptime = urlParams.get('picktime');
+    const Option = urlParams.get('option');
+    const lat = urlParams.get('lat');
+    const lng = urlParams.get('long');
+
+    console.log(pickup);
+
+    // const pick =`https://maps.google.com/?q=${lat},${lng}`
+  
+    function submit() {
+
+        if (pickup==null) {
+
+            
+
+       
+
+            var url = "https://wa.me/+919035471947?text="
+       +"*Name :* "+name+"%0a"
+       +"*Drop Location:* "+drop+"%0a"
+       +"*Pickup Location:* "+pickup+"%0a"
+       +"*Phone Number:* "+number+"%0a"
+       +"*Option:* "+Option+"%0a"
+       +"*Pickup Time:* "+Pickupdate+"%0a"
+       +"*Pickup Date:* "+Pickuptime+"%0a"
+       +"%0a%0a"+pick
+      
+
+        window.open(url, '_blank').focus();
+            
+        } else {
+
+
+       
+
+            var url = "https://wa.me/+919035471947?text="
+       +"*Name :* "+name+"%0a"
+       +"*Drop Location:* "+drop+"%0a"
+       +"*Pickup Location:* "+pickup+"%0a"
+       +"*Phone Number:* "+number+"%0a"
+       +"*Option:* "+Option+"%0a"
+       +"*Pickup Time:* "+Pickupdate+"%0a"
+       +"*Pickup Date:* "+Pickuptime+"%0a"
+       +"%0a%0a"
+      
+
+        window.open(url, '_blank').focus(); 
+        }
+
+       
+        
+    }
+       
+    
+  </script>
+  
+</html>
