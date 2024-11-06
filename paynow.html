@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,12 +34,7 @@
 <script>
     
     const queryString = window.location.search;
-  
-    
     const urlParams = new URLSearchParams(queryString);
-  
-   
-   
     const name = urlParams.get('name');
     var pickup = urlParams.get('pickup');
     const drop = urlParams.get('drop');
@@ -47,21 +42,17 @@
     const Pickupdate = urlParams.get('pickdate');
     const Pickuptime = urlParams.get('picktime');
     const Option = urlParams.get('option');
+    var payId=urlParams.get("payId")
     const lat = urlParams.get('lat');
     const lng = urlParams.get('long');
 
-    console.log(pickup);
+    console.log(payId);
 
     // const pick =`https://maps.google.com/?q=${lat},${lng}`
-  
+
     function submit() {
 
         if (pickup==null) {
-
-            
-
-       
-
             var url = "https://wa.me/+919035471947?text="
        +"*Name :* "+name+"%0a"
        +"*Drop Location:* "+drop+"%0a"
@@ -101,4 +92,5 @@
     
   </script>
   
-</html>
+</html> 
+

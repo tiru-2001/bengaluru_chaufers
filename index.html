@@ -49,7 +49,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
       <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">Restaurantly</a></h1> -->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.html" class="logo me-auto me-lg-0" style="display: flex; flex-direction: column; gap: 6px;"><img src="assets/img/new1bc.jpeg" style="width: 190px; height: 60px;"  alt="" class="img-fluid"> <!-- <div style="font-weight: 400;">Bengaluru chauffeurs</div> --></a>
+      <a href="index.html" class=" me-auto me-lg-0" style="height: 120px; width: 140px ;margin:0">
+        <img src="assets/img/chauffers_logo-removebg-preview.png" style="object-fit: contain; width: 100%; height: 100%; "  alt="logo" ></a>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -151,7 +152,7 @@
               <p>We offer professional driving services and cater to your every need whether big or small in and around bangalore city.
                 Our top priority is to ensure a smooth and stress free commute through bangalore's hectic traffic. </p>
         <br>
-                <a href="form.html"  style="color:white;margin-top:5px;border-radius:20px!important;background-color: rgba(189, 168, 74, 0.909);padding:10px;">Book Now</a>
+                <button value="2000" onclick="navigate(2000)" style="color:white;margin-top:5px;border-radius:20px!important;background-color: rgba(189, 168, 74, 0.909);padding:10px;">Book Now</button>
               </div>
           </div>
 
@@ -164,7 +165,7 @@
                 Our chauffeurs have more than 5+ years of experience in driving premium and luxury cars. 
                 These chauffeurs are also available for outstation bookings.
                 </p>
-                <br>                <a href="form.html"  style="color:white;margin-top:5px;border-radius:20px!important;background-color: rgba(189, 168, 74, 0.909);padding:10px;">Book Now</a>
+                <br>                <button onclick="navigate(3000)"  style="color:white;margin-top:5px;border-radius:20px!important;background-color: rgba(189, 168, 74, 0.909);padding:10px;">Book Now</button>
             </div>
           </div>
 
@@ -178,7 +179,7 @@
                 We are a professional chauffeur service company . 
               </p>
               <br>   
-              <a href="form.html"  style="color:white;margin-top:5px;border-radius:20px!important;background-color: rgba(189, 168, 74, 0.909);padding:10px;">Book Now</a>
+              <button onclick="navigate(5000)"  style="color:white;margin-top:5px;border-radius:20px!important;background-color: rgba(189, 168, 74, 0.909);padding:10px;">Book Now</button>
             </div>
           </div>
         </div>
@@ -474,7 +475,7 @@
                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <!-- <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt=""> -->
-                <h3>Soumya</h3>
+                <h3>Sowmya</h3>
                 <!-- <h4>Designer</h4> -->
               </div>
             </div><!-- End testimonial item -->
@@ -499,7 +500,7 @@
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <!-- <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt=""> -->
-                <h3>Syed Muhammed</h3>
+                <h3>Syed Mohmmad Yasin</h3>
                 <!-- <h4>Freelancer</h4> -->
               </div>
             </div><!-- End testimonial item -->
@@ -713,8 +714,9 @@
               </div> -->
               <div class="phone" style="margin-top: 0px;">
                 <i class="bi bi-phone"></i>
-                <h4>Call : Mahesh</h4>
+                <h4>Contact : Mahesh</h4>
                 <p>+91 9035471947</p>
+                <p>+91 9108065999</p>
               </div>
             </div>
           </div>
@@ -818,7 +820,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
-        Designed by <a href="https://webcascade.co.in">Webcascade</a>
+        Designed by <a href="https://thewebsort.com">Websort</a>
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -838,6 +840,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const navigate=(value)=>{
+      window.location.href=`form.html?amount=${value}`;
+    }
+  </script>
 
 </body>
 </html>
